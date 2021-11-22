@@ -1,2 +1,2 @@
 usr = 'root'
-pswd = 'ga46_022'
+pswd = 'urubu100'
