@@ -3,10 +3,10 @@
 PURPLE='0;35'
 NC='\033[0m' 
 VERSAO=11
-	
-echo  "$(tput setaf 10)[Bot assistant]:$(tput setaf 7) Olá caro Usuário, serei seu assistente para instalação do Java!;"
-echo  "$(tput setaf 10)[Bot assistant]:$(tput setaf 7) Estarei Verificando aqui se você possui o Java instalado...;"
-
+echo  "$(tput setaf 10)[Bot assistant]:$(tput setaf 7) +----------------------------------------------------------------------+"	
+echo  "$(tput setaf 10)[Bot assistant]:$(tput setaf 7) |Bem-Vindo caro Usuário, serei seu assistente para instalação do Java! |"
+echo  "$(tput setaf 10)[Bot assistant]:$(tput setaf 7) |Estarei Verificando aqui se você possui o Java instalado...;          |"
+echo  "$(tput setaf 10)[Bot assistant]:$(tput setaf 7) +----------------------------------------------------------------------+"
 java -version
 if [ $? -eq 0 ]
 	then
