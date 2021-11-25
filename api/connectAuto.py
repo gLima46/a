@@ -41,7 +41,7 @@ def qntDeMaquinasTotais():
         host = "localhost",
         user = usr,
         password = pswd,
-        database = "serverhealers"
+        database = "serverHealers"
         )
 
         mycursor = mydb.cursor()
