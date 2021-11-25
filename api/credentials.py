@@ -1,2 +1,2 @@
 usr = 'root'
-pswd = 'aluno1217'
+pswd = 'urubu100'
