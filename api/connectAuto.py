@@ -7,7 +7,7 @@ def insert_db(value1,value2,value3,value4, value5):
             host = "localhost",
             user = usr,
             password = pswd,
-            database = "serverhealers"
+            database = "serverHealers"
         )
 
         if mydb.is_connected():
@@ -71,7 +71,7 @@ def funcMaquinas():
         host = "localhost",
         user = usr,
         password = pswd,
-        database = "serverhealers"
+        database = "serverHealers"
         )
 
         mycursor = mydb.cursor()
