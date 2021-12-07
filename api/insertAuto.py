@@ -3,6 +3,7 @@ import psutil
 import time
 from functools import reduce
 from connectAuto import *
+from connectBot import *
 import mysql.connector
 from credentials import usr, pswd
 
@@ -42,14 +43,14 @@ try:
                 cpuRandom = 100
 
             if(row == 1):
-                print("| Maquina: ", fkMaquinas, 
+                print("\n| Maquina: ", fkMaquinas, 
                 "| Disco:", float('{0:.2f}'.format(disco)),
                 "| Ram:",float('{0:.2f}'.format(ram)),
                 "| CPU:",float('{0:.2f}'.format(cpu)),
                 "| temperatura:",float('{0:.2f}'.format(temperatura)),
                 "| Date:",dataCaptura)
             else:
-                print("| Maquina: ", fkMaquinas, 
+                print("\n| Maquina: ", fkMaquinas, 
                 "| Disco:", float('{0:.2f}'.format(discoRandom)),
                 "| Ram:",float('{0:.2f}'.format(ramRandom)),
                 "| CPU:",float('{0:.2f}'.format(cpuRandom)),
@@ -67,6 +68,11 @@ try:
 
                 cont = 0
             
+            if(row == 1):
+                connectBot(fkMaquinas, disco, ram, cpu)
+            else:
+                connectBot(fkMaquinas, discoRandom, ramRandom, cpuRandom) 
+
         print("\n")
 
         time.sleep(discretizacao)
